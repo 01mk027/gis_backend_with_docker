@@ -18,3 +18,11 @@ EXPOSE 8000
 
 # Django uygulamasını çalıştırıyoruz
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
+RUN pip3 install mergin-client
+
+RUN pip install fiona
+
+RUN pip install folium
+
+RUN pip install geopandas
